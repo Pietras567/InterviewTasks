@@ -1,26 +1,51 @@
-# Interview Tasks Repository
+# Zadanie Rekrutacyjne
 
-Welcome to the **Interview Tasks Repository**, a collection of programming exercises and challenges from technical interviews. Each task includes a clear problem statement, input and output requirements, and sample test cases.
+## Cel
 
----
+Rozbudowa istniejącego projektu poprzez implementację formularza do dodawania wiadomości do bazy danych. Dodatkowo, wiadomości powinny być wyświetlane w tabeli z następującymi kolumnami: ID, Wiadomość, Akcje.
 
-## 📋 Table of Contents
+## Wymagania
 
-1. [Overview](#overview)
-2. [Tasks](#tasks)
----
+- Node.js v18.17.0+
+- Docker v20.10.11+
 
-## 🔍 Overview
+### Formularz dodawania wiadomości
 
-This repository contains a set of implemented interview tasks covering various topics such as data structures, algorithms, system design, and language-specific challenges. Problems are ranging from easy to hard.
+- Umożliwia wprowadzenie treści wiadomości oraz dodanie jej do bazy danych.
 
----
+### Tabela wiadomości
 
-## 📝 Tasks
+- Wyświetla listę wiadomości z kolumnami: ID, Wiadomość, Akcje.
+- W każdym wierszu w kolumnie "Akcje" powinny znajdować się dwie funkcjonalności:
+  - **Edycja**: Po naciśnięciu przycisku "Edytuj", powinien pojawić się popup z formularzem umożliwiającym edycję wybranej wiadomości.
+  - **Usuwanie**: Po naciśnięciu przycisku "Usuń", wiadomość powinna zostać usunięta z bazy danych.
 
-| Task ID | Title                                    | Difficulty | Languages                      |
-|---------|------------------------------------------|------------|--------------------------------|
-| 001     | Message manager                          | Easy       | JavaScript, Express, Next.js   |
-| 002     | Certificate manager                      | Easy       | Ruby, React                    |
+### Backend
 
----
+- Należy samodzielnie zaimplementować backend, który obsłuży dodawanie, edytowanie i usuwanie wiadomości z bazy danych.
+
+### Użycie RTK Query
+
+- Do komunikacji z serwerem należy wykorzystać RTK Query.
+
+### Komponenty ShadCN
+
+- W projekcie należy zastosować gotowe komponenty z biblioteki ShadCN, co umożliwi szybkie i estetyczne tworzenie interfejsu użytkownika.
+
+### Uruchomienie projektu
+
+Aby uruchomić projekt, należy w terminalu w głównym katalogu projektu wpisać:
+
+```
+docker compose up
+```
+
+## Dystrybucja
+
+Wynik powinien być wykonany na osobnej gałęzi w prywatnym repozytorium i przesłany jako pull request do użytkownika @BiznesportTech.
+
+## Dodatkowe wskazówki
+
+- Zadbaj o walidację danych w formularzu.
+- Upewnij się, że interfejs użytkownika jest intuicyjny i przyjazny.
+- Zastosuj najlepsze praktyki programistyczne w kodzie frontendowym i backendowym.
