@@ -12,7 +12,7 @@ Welcome to the **Interview Tasks Repository**, a collection of programming exerc
 
 ## 🔍 Kokoverview
 
-This repository contains a set of implemented interview tasks covering various topics such as data structures, algorithms, system design, and language-specific challenges. Problems are ranging from easy to hard.
+This repository present a set of implemented interview tasks covering various topics such as data structures, algorithms, system design, and language-specific challenges. Problems are ranging from easy to hard.
 
 ---
 
